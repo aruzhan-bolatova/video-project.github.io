@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+#scene1 {
+	display: block;
+	margin: auto;
+	margin-top: 3%;
+}
+
+.heading {
+	color: #fa7c62;
+	font-family: Righteous;
+	font-size: 50pt;
+	display: block;
+	text-align: center;
+}
+/*.nextButton {
+	position: relative;
+	border: none;
+	outline: none;
+	padding: 30px 30px;
+	background-color: black;
+	color: whitesmoke;
+	text-align: center;
+	margin-right: 100px;
+	float: right;
+	cursor: pointer;
+}
+
+.nextButton:hover {
+	background-color: white;
+	color: black;
+}*/
+
+.nextButton {
+  font-size: 16pt;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.nextButton:after {
+  content: "";
+  background-color: black; /* change this for each character */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.nextButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.button{
+	width: 20%;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 30px;
+	font-family: Raleway;
+	border: none;
+	outline: none;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+
+.question {
+	color: black;
+	font-family: Satisfy;
+	font-size: 40pt;
+	display: block;
+	text-align: center;
+}
+
+#characters {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Optional padding */
+    padding-top: 80px;
+    padding-bottom: 210px;
+}
+
+#characters img {
+    width: 20%; /* Set the width of your images */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Add cursor pointer for better usability */
+}
+
+#buttonSara:hover {
+	background-color: #ded748;
+}
+
+#buttonDiana:hover {
+	background-color: #d8b6c9;
+}
+
+#buttonAlreem:hover {
+	background-color: #59a35a;
+}
+
+#buttonAru:hover {
+	background-color: #f2d8d6;
+}
+
+#videoPlayer {
+    display: none;
+    margin: auto;
+    padding-top: 100px;
+    border: none;
+    outline: none;
+}
+
+.section {
+	background-color: white;
+}
+.section_bg_color {
+	background-color: white;
+}
+
+.additional-buttons {
+	position: relative;
+    margin-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+.additional-buttons button {
+    margin: 0 15px;
+/*    padding: 10px;*/
+    cursor: pointer;
+}
+
+
+.OptionButtonSara {
+  width: 27%;
+  font-size: 20pt;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.OptionButtonSara:after {
+  content: "";
+  background-color: #ded748; /* change this for each character */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.OptionButtonSara:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+
+.OptionButtonDiana {
+  width: 27%;
+  font-size: 20pt;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.OptionButtonDiana:after {
+  content: "";
+  background-color: #d8b6c9; /* change this for each character */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.OptionButtonDiana:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.OptionButtonAlreem {
+  font-size: 20pt;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  width: 27%;
+}
+
+.OptionButtonAlreem:after {
+  content: "";
+  background-color: #59a35a; /* change this for each character */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.OptionButtonAlreem:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.OptionButtonAru {
+  width: 27%;
+  font-size: 20pt;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.OptionButtonAru:after {
+  content: "";
+  background-color: #f2d8d6; /* change this for each character */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.OptionButtonAru:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.final_page {
+	margin-bottom: 100px;
+}
+.finalButton_disabled {
+  font-size: 20pt;
+  font-weight: 200;
+  margin-bottom: 100px;
+  color: black;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.finalButton_enabled {
+  font-size: 20pt;
+  font-weight: 200;
+  margin-bottom: 100px;
+  color: white;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.finalButton_enabled:hover {
+	background-color: white;
+	color: black;
+}
+
+/*.finalButton:after {
+  content: "";
+  background-color: black; 
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.finalButton:hover:after {
+  top: 0px;
+  left: 0px;
+}*/
+
+.backButton {
+  font-size: 20pt;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 1px;
+  padding: 13px 100px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.backButton:after {
+  content: "";
+  background-color: black; /* change this for each character */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.backButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
