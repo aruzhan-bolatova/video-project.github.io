@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let nextButton = document.getElementById('nextButton');
     nextButton.addEventListener('click', function () {
     	console.log("next page");
-    	window.location.href = 'index.html';
+    	window.location.href = 'main.html';
     	});
 });
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let backButton = document.getElementById('backButton'); 
     backButton.addEventListener('click', function () {
     	console.log("go back page");
-    	window.location.href = 'main.html';
+    	window.location.href = 'index.html';
     })
 })
 
