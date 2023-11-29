@@ -44,19 +44,19 @@ function handleButtonClick(buttonNumber) {
         
 	switch (buttonNumber) {
         case 1:
-            videoPlayer.src = 'media/albloom-full.mp4';
+            videoPlayer.src = 'media/sara_intro.mp4';
             createAdditionalButtons(['Chores', 'Unix Lab'], 'OptionButtonSara');
             window.scrollBy(0, window.innerHeight * 1.25);
             changeBackgroundColor('#f1efb5')
             break;
         case 2:
             videoPlayer.src = 'media/diana_intro.mp4';
-            createAdditionalButtons(['GRWM 4 Date', 'Baraha'], 'OptionButtonDiana');
+            createAdditionalButtons(['GRWM', 'Baraha'], 'OptionButtonDiana');
             window.scrollBy(0, window.innerHeight * 1.25);
             changeBackgroundColor('#f3e9ee')
             break;
         case 3:
-            videoPlayer.src = 'media/albloom-full.mp4';
+            videoPlayer.src = 'media/alreem_intro.mp4';
             createAdditionalButtons(['Travel', 'Shopping'], 'OptionButtonAlreem');
             window.scrollBy(0, window.innerHeight * 1.25);
             changeBackgroundColor('#ddecde')
@@ -113,7 +113,7 @@ function playVideo(videoName) {
             clickCounters[1] = true;}
             break;
         case 'Travel':
-            videoPlayer.src = 'media/travel.mp4';
+            videoPlayer.src = 'media/holiday.mp4';
             if (!clickCounters[2]) {
             clickCounters[2] = true;}
             break;
@@ -127,12 +127,12 @@ function playVideo(videoName) {
             if (!clickCounters[3]) {
 			clickCounters[3] = true;}
 			break;
-		case 'Vlog':
-			videoPlayer.src = 'media/vlog.mp4';
-			if (!clickCounters[3]) {
-			clickCounters[3] = true;}
-			break;
-		default:
+	case 'Vlog':
+		videoPlayer.src = 'media/vlog.mp4';
+		if (!clickCounters[3]) {
+		clickCounters[3] = true;}
+		break;
+	default:
             console.error("Invalid videoName");
         }
 
@@ -157,32 +157,6 @@ function changeBackgroundColor(color) {
 }
 
 let clickCounters = [false, false, false, false];
-
-
-
-// let finalPage = document.getElementById('final_page')
-// if (clickCounters.every(count => count >= 1)) {
-// 	finalPage.style.display = 'block'
-// }
-
-// 	//first event listener: it fires whenever the playback position of the video changes
-// 	theVideo.ontimeupdate = () =>{
-	
-// 	//we write the current time of our video, by accessing the currentTime video
-// 	console.log("duration", theVideo.currentTime);
-
-// 	//if we're past a certain point, we display something to the webpage!
-// 	if(theVideo.currentTime >= 3.5){
-// 	document.getElementById("reaction").innerText = "WHAT ABOUT TECHNOLOGY";
-// 	}
-
-// 	// if (theVideo.currentTime >= 4) {
-// 	//    	// Make the buttons visible
-// 	//     document.getElementById("aru_choice1").style.display = "block";
-// 	//     document.getElementById("aru_choice2").style.display = "block";
-// 	// }
-// 	};
-// 	});
 
 
 										
