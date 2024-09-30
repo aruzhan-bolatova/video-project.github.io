@@ -22,4 +22,4 @@ Reflecting on the work done, we encountered issues and challenges in almost ever
 Furthermore, the coding part had its own challenges and we are certain that we grew up by overcoming them. First, as mentioned above, figuring out the logic of the website structure was a bit challenging such as whether to open a new tab with a button clicked, or to make the page scroll down etc. During the process of coding, there were some issues with the design of the website such as not being able to make the button designs as aesthetic as we wanted and making them a little dynamic from the first trial. However, by some explanation of the logic and debugging with the help of each other, we could solve those issues. Last but not least, loading the videos to GitHub had its own issues as it took a lot of time and reloading because of the quality decrease. 
 
 # Website Link: 
-https://aruzhan-bolatova.github.io/video-project.github.io/
+[https://aruzhan-bolatova.github.io/video-project.github.io/](https://aruzhan-bolatova.github.io/video-project.github.io/)
